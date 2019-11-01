@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Bubbletea Stores</h2>
+
+    <h3>New bubbletea store?  Submit it <a href="{{ url_for('sign') }}">here</a></h3>
+    <h3>List of bubble tea stores: </h3>
+    {% for entry in entries %}
+        <p class=entry>
+            {{ entry.name }} &lt;{{ entry.address }}&gt;
+	    <!--<br>signed on {{ entry.signed_on }}<br>-->
+	    {{ entry.special }}
+        </p>
+    {% endfor %}
+
+{% endblock %}
