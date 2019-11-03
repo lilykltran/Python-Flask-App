@@ -11,19 +11,19 @@ class model(Model):
     def select(self):
         """
         Returns guestentries list of lists
-        Each list in guestentries contains: name, address, special
+        Each list in guestentries contains: name, email, date, message
         :return: List of lists
         """
         return self.guestentries
 
-    def insert(self, name, address, special):
+    def insert(self, name, email, message):
         """
         Appends a new list of values representing new message into guestentries
         :param name: String
-        :param address: String
-        :param special: String
+        :param email: String
+        :param message: String
         :return: True
         """
-        params = [name, address, special]
+        params = [name, email, date.today(), message]
         self.guestentries.append(params)
         return True

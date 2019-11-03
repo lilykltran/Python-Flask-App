@@ -1,3 +1,4 @@
+"""Executed upon import from app.py to instantiate model returned by get_model().  Uses sqlite3 backend model."""
 #model_backend = 'pylist'
 model_backend = 'sqlite3'
 

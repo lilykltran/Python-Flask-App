@@ -1,3 +1,4 @@
+"""base class for model.  Derived models must implement abstract methods"""
 class Model():
     def select(self):
         """
@@ -6,12 +7,12 @@ class Model():
         """
         pass
 
-    def insert(self, name, address, special):
+    def insert(self, name, email, message):
         """
         Inserts entry into database
         :param name: String
-        :param address: String
-        :param special: String
+        :param email: String
+        :param message: String
         :return: none
         :raises: Database errors on connection and insertion
         """

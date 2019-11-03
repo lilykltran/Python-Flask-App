@@ -26,34 +26,36 @@ class model(Model):
         try:
             cursor.execute("select count(rowid) from bubbletea")
         except sqlite3.OperationalError:
-            cursor.execute("create table bubbletea (name text, address text, special)")
-            cursor.execute("insert into bubbletea(name, address, special) VALUES ('dingtea', 'PDX', 'taro'") 
+            cursor.execute("create table bubbletea (name text,
+                            streetAddress text, city text, state text,
+                            zip text, hours text, phone text, rating text,
+                            review text, drink text)")
         cursor.close()
 
     def select(self):
         """
         Gets all rows from the database
-        Each row contains: name, address, special
+        Each row contains: name, email, date, message
         :return: List of lists containing all rows of database
         """
         connection = sqlite3.connect(DB_FILE)
         cursor = connection.cursor()
-        cursor.execute("SELECT * FROM bubbletea")
+        cursor.execute("SELECT * FROM guestbook")
         return cursor.fetchall()
 
-    def insert(self, name, address, special):
+    def insert(self, name, email, message):
         """
         Inserts entry into database
         :param name: String
-        :param address: String
-        :param special: String
+        :param email: String
+        :param message: String
         :return: True
         :raises: Database errors on connection and insertion
         """
-        params = {'name':name, 'address':address, 'special':special}
+        params = {'name':name, 'email':email, 'date':date.today(), 'message':message}
         connection = sqlite3.connect(DB_FILE)
         cursor = connection.cursor()
-        cursor.execute("insert into bubbletea (name, address, special) VALUES (:name, :address, :special)", params)
+        cursor.execute("insert into guestbook (name, email, signed_on, message) VALUES (:name, :email, :date, :message)", params)
 
         connection.commit()
         cursor.close()
