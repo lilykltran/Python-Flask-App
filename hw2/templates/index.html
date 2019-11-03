@@ -7,10 +7,14 @@
     <h3>Bubbletea Stores:</h3>
     {% for entry in entries %}
         <p class=entry>
-	{{ entry.name }}<br>{{ entry.streetAddress }} {{ entry.city }},
+	<strong>Store Name: </strong>{{ entry.name }}<br>
+	<strong>Address: </strong>{{ entry.streetAddress }} {{ entry.city }},
 	{{ entry.state }}  {{ entry.zipCode }}<br>
-	{{ entry.hours }}<br>{{ entry.phone }}<br>{{ entry.rating }}<br>
-	{{ entry.review }}<br>{{ entry.drink }}
+	<strong>Store Hours: </strong>{{ entry.hours }}<br>
+	<strong>Phone Number: </strong>{{ entry.phone }}<br>
+	<strong>Your rating: </strong>{{ entry.rating }}<br>
+	<strong>Write a review: </strong>{{ entry.review }}<br>
+	<strong>Drink recommendation: </strong>{{ entry.drink }}
         </p>
     {% endfor %}
 

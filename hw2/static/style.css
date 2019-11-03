@@ -1,13 +1,17 @@
-body{font-family: "Helvetica",sans-serif;
+body{font-family: "Comic Sans MS", sans-serif;
      font-size: 20px;
-     color: #FF6666; }
+     color: #FF6666;
+     background-color: #ffffcc;}
 
-a, h1, h2{color: #00008F;}
+a, h1, h2{color: #ffbb99;
+	 font-family: "Comic Sans MS",sans-serif;}
 
 form{margin:.1em auto;
      padding:.1em;
      width: 400px;
-     border: 1px}
+     border: 1px;
+     background-color: #fff;
+}
 
 .heading{font-weight: bold;}
 

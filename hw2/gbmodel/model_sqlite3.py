@@ -1,17 +1,18 @@
 """
-A simple guestbook flask app.
-ata is stored in a SQLite database that looks something like the following:
+A simple bubbletea flask app.
+Data is stored in a SQLite database that looks something like the following:
 
-+------------+------------------+------------+----------------+
-| Name       | Email            | signed_on  | message        |
-+============+==================+============+----------------+
-| John Doe   | jdoe@example.com | 2012-05-28 | Hello world    |
-+------------+------------------+------------+----------------+
++------------+------------------+------------+------------------------------+
+| Name       | StreetAdress     | City     | State | ZipCode | Hours        | 
++============+==================+============+------------------------------+
+| Drink Boba | 1234 SW 12th Ave | Portland | OR    | 90000   | 9:00am-10:00pm
++------------+------------------+------------+------------------------------+
 
 This can be created with the following SQL (see bottom of this file):
 
-    create table guestbook (name text, email text, signed_on date, message);
-
+    create table bubbletea (name text, streetAddress text, city text,
+                        state text, zipCode text, hours text, phone text,
+                        rating text, review text, drink text)
 """
 from datetime import date
 from .Model import Model
@@ -41,7 +42,8 @@ class model(Model):
         cursor.execute("SELECT * FROM bubbletea")
         return cursor.fetchall()
 
-    def insert(self, name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink):
+    def insert(self, name, streetAddress, city, state, zipCode, hours, phone,
+            rating, review, drink):
         """
         Inserts entry into database
         :param name: String
@@ -57,7 +59,10 @@ class model(Model):
         :return: True
         :raises: Database errors on connection and insertion
         """
-        params = {'name':name, 'streetAddress':streetAddress, 'city':city, 'state':state, 'zipCode':zipCode, 'hours':hours, 'phone':phone,'rating':rating, 'review':review, 'drink':drink}
+        params = {'name':name, 'streetAddress':streetAddress, 'city':city,
+                 'state':state, 'zipCode':zipCode, 'hours':hours,
+                 'phone':phone, 'rating':rating, 'review':review,
+                 'drink':drink}
         connection = sqlite3.connect(DB_FILE)
         cursor = connection.cursor()
         cursor.execute("insert into bubbletea (name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink) VALUES (:name, :streetAddress, :city, :state, :zipCode, :hours, :phone, :rating, :review, :drink)", params)

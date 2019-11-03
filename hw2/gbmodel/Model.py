@@ -1,4 +1,4 @@
-"""base class for model.  Derived models must implement abstract methods"""
+"""Base class for model.  Derived models must implement abstract methods"""
 class Model():
     def select(self):
         """

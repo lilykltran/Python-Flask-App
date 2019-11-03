@@ -1,4 +1,4 @@
-#Lily Tran
+#Lily Tran.  Derived from Wuchang's Guestbook app v3
 """
 A simple bubbletea flask app.  Modified to run on port 8000 instead of 5000. Labeling and routing requests.
 """
@@ -13,7 +13,7 @@ app.add_url_rule('/',
                  view_func=Index.as_view('index'),
                  methods=["GET"]) #register methods viewer supports
 
-#post handling for sign.`
+#post handling for sign.
 app.add_url_rule('/sign/', 
                  view_func=Sign.as_view('sign'),
                  methods=['GET', 'POST'])
