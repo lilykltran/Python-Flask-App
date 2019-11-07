@@ -1,0 +1,36 @@
+body{font-family: "Comic Sans MS", sans-serif;
+     font-size: 20px;
+     color: #FF6666;
+     background-color: #ffffcc;}
+
+a, h1, h2{color: #ffbb99;
+	 font-family: "Comic Sans MS",sans-serif;}
+
+form{margin:.1em auto;
+     padding:.1em;
+     width: 400px;
+     border: 1px;
+     background-color: #fff;
+}
+
+.heading{font-weight: bold;}
+
+.page{margin:.1em auto;
+      padding:.1em;
+      width: 504px;}
+
+.entry{margin-bottom: 2em;
+       padding-bottom: 2em;
+       border-bottom: 1px solid #888;}
+
+input[type=text]{margin: .5em 0;
+                padding: .5em;
+	        font-size: 12px;
+	        color: #777;
+	        width: 200px;}
+
+input[type=textarea]{margin: .5em 0;
+                     padding: .5em;
+	             font-size: 12px;
+	             color: #777;
+	             width: 200px;}
