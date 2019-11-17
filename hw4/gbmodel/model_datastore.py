@@ -42,20 +42,20 @@ class model(Model):
         entities = list(map(from_datastore,query.fetch()))
         return entities
 
-    def insert(self,name,email,message):
+    def insert(self,name,streetAddress,city,state,zipCode,hours,phone,rating,review,drink):
         key = self.client.key('bubbletea')
         rev = datastore.Entity(key)
         rev.update( {
-            'name': name,
-            'streetAddress': streetAddress,
-            'city': city,
-            'state': state,
-            'zip': zipCode,
-            'hours': hours,
-            'phone': phone,
-            'rating': rating,
-            'review': review,
-            'drink': drink
+            'name' : name,
+            'streetAddress' : streetAddress,
+            'city' : city,
+            'state' : state,
+            'zipCode' : zipCode,
+            'hours' : hours,
+            'phone' : phone,
+            'rating' : rating,
+            'review' : review,
+            'drink' : drink
             })
         self.client.put(rev)
         return True
