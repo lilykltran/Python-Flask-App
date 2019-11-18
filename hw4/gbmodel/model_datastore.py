@@ -24,9 +24,8 @@ def from_datastore(entity):
         [Entity{key: (kind, id), prop: val, ...}]
 
     This returns:
-        [ name, email, date, message ]
-    where name, email, and message are Python strings
-    and where date is a Python datetime
+        [ name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink]
+    where all are python strings
     """
     if not entity:
         return None
