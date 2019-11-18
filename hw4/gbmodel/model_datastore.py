@@ -24,8 +24,9 @@ def from_datastore(entity):
         [Entity{key: (kind, id), prop: val, ...}]
 
     This returns:
-        [ name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink]
-        where all are python strings
+        [ name, email, date, message ]
+    where name, email, and message are Python strings
+    and where date is a Python datetime
     """
     if not entity:
         return None
@@ -46,16 +47,16 @@ class model(Model):
         key = self.client.key('bubbletea')
         rev = datastore.Entity(key)
         rev.update( {
-            'name' : name,
-            'streetAddress' : streetAddress,
-            'city' : city,
-            'state' : state,
-            'zipCode' : zipCode,
-            'hours' : hours,
-            'phone' : phone,
-            'rating' : rating,
-            'review' : review,
-            'drink' : drink
+            'name': name,
+            'streetAddress': streetAddress,
+            'city': city,
+            'state': state,
+            'zipCode': zipCode,
+            'hours': hours,
+            'phone': phone,
+            'rating': rating,
+            'review': review,
+            'drink': drink
             })
         self.client.put(rev)
         return True
