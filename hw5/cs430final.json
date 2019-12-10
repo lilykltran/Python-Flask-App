@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cs430-lily-tran",
+  "private_key_id": "11425883961241e4cec1e6225a9a8a703450ee25",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCd5pKx1WKB7Iu9\n5zdP3uoRRZXoiosmony3mDeNiBkvbdwmq+H/VldsSOGxHqHYVROexv3tTCksfYDF\nXj2ZQlI0/HvOhxBmaHKgjMquZGTjq1a8D9E4861lpd2sCUdck6klVo1p3351PSKs\nd7foDFLF7XWiXkuRA/lLIjtVl+Lwnd6tfWtauAmJKo+YBa/aPqKTSLdgDMXvQhKZ\nobtUtFnnzvmI6XaXTIG8dg9MeetItdmRvrUihHv9HTubCG8XlmsseomqOEYl3MZ1\nfaIq6wF9EpL9nCAupbbF8RaUhZzT6hUMagNVrEya2Uhmxaf+teIKPeMtzykkisJU\nSWtpEwudAgMBAAECggEACfq+nrqrxSZcFp58YnHmPT02okHPVZvDYh8es7U8UkER\nPuhyGh8s200n5nfXJsMJwGk3Nz4vA/7SmqbAIeWNKIgkkwL6SF6lj/wV+zuhHLqB\netVNFdpgxSHchrj3Z6R1dkSoH17esS4x+NCAMQxGVvgRDTgEcp/bq6H4OgqlbyuR\nrblggMnB3MwxCsT/Elc03VK/qNyqPAl4GlAkue/PsIT+PxVs9u66bGijy8y7VNHp\nfoYPeoz1JcYXIbxPD+qdh4gC3hwsBfxnOaOgFWOnXgYQ3j0Ni5W4LGXHoQFDSe9K\noV0t87M6O/Y2Wf4WP6x6ewDmlumbEFEwesdvrAe6AQKBgQDRkF03o3T0bidc7kE1\nVQZK9h3co2WSkN0BSEyHonX0Jft1XMsHlwN3MC+VBekTmr7eAbTUx/L2e40HWz6Q\nrHkLak3bjk2KuIbBlXUDYjDJ5lnyEiTcImFp4fc+gs3VANGgQDpNsI218gbzty9u\nQpZoB7SEt7MrcjnJc+JXRVxzQQKBgQDA45TA/nJDDgeoZ+FKOqo84YxybsH05sHE\nkXjci4UgY/ZzeuE+Jv6qrbVYQVdqroGINLeNAG2xV9Rhv8LlspUQg6fF1cPJQwjP\neOONyVyYpNkVV+DX+MgV4EU+3Z9Jiv52fNbf/U4u4CwNuFYOXKZT2Iv9cApQ5F0J\ncUfmj0rtXQKBgA27DcCFfzY8uWuHWNJrvbvPoGlCc3dE8pYQ7KK+bEgQ7Qbli4/1\nvw5iI9v5xSm5q+PT7Ms8RpkLw1PGELVd95hd4LgP/Nin+nxYlJAiMNwpsZ8AvVWH\nEybi3VZFL8NTCGkdjDRm6wIO15HEYOEyj7RFPPitKJoiI9MlOqFJNCOBAoGAQpHI\nktq94HqFFg/T5uRcQGqvKAcllTnWgdqa1bKpHUailbRA7ExU897DiVPzsXPMbI+V\nEWqmcOAZAitGPjPl0i89xb9CtMEX11KnZhWqiVvLN9x+Ussfcr1V6J5gDOeVbpsj\nJWashu0DBzEpMgezt5gyqCL0zHojydB4ug+WElkCgYEAyVkeSjrv6V+7FPFjFjQa\n9ZXvqO+BfzzsiUPZNgOxTMb2fZdI2oqinFWXBsQjxmKsznXjH6XSZdfZjyWZ8Ce+\nV5DUcRr38fvWKe6clPfnQa9mzHeDp1sGn2Q2onBfbUTdpWW96PTtqx3NsCorx6UI\nXGpC37UueR5rGEfwUrKWY/w=\n-----END PRIVATE KEY-----\n",
+  "client_email": "cs430final@cs430-lily-tran.iam.gserviceaccount.com",
+  "client_id": "109901206476515351689",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cs430final%40cs430-lily-tran.iam.gserviceaccount.com"
+}

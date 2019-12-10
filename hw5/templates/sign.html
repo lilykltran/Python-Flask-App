@@ -1,0 +1,28 @@
+<!--sign presenter for inserting new bubble tea store-->
+{% extends "layout.html" %}
+{% block content %}
+    <script>
+      function getReview(){
+	     r = document.getElementById("review").value; 
+	     window.alert("Thank you for your review!");
+      }
+    </script>
+    <h1>
+    <h2>Submit a new bubbletea store</h2>
+    <h3><a href="{{ url_for('home') }}">home page</a></h3>
+    <h3>See submissions <a href="{{ url_for('index') }}">here</a></h3>
+    <form action="{{ url_for('sign') }}" method=post>
+	<p class="heading">Name: <input type=text name=name>
+	<p class="heading">Street address: <input type=text name=streetAddress>
+	<p class="heading">City: <input type=text name=city>
+	<p class="heading">State: <input type=text name=state>
+	<p class="heading">Zip code: <input type=text name=zipCode>
+	<p class="heading">Store hours: <input type=text name=hours>
+	<p class="heading">Phone number: <input type=text name=phone>
+	<p class="heading">Rating: <input type=text name=rating>
+	<p class="heading">Review:
+	<textarea rows=5 cols=50 id = "review" name=review></textarea></p>
+	<p class="heading">Drink to order: <input type=text name=drink>
+	<p><input type=submit value=Sign onClick=getReview()></p>
+    </form>
+{% endblock %}
