@@ -24,7 +24,7 @@ def from_datastore(entity):
         [Entity{key: (kind, id), prop: val, ...}]
 
     This returns:
-        [ name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink]
+        [ name, streetAddress, city, state, zipCode, hours, phone, rating, review, drink, analysis]
         where all are python strings
     """
     if not entity:
